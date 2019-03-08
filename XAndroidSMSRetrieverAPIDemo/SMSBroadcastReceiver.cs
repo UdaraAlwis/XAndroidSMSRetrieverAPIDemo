@@ -34,21 +34,20 @@ namespace XAndroidSMSRetrieverAPIDemo
                     var messageContent = (string)extrasBundleundle.Get(SmsRetriever.ExtraSmsMessage);
                     // Extract one-time code from the message and complete verification
                     // by sending the code back to your server.
-                    //var foundKeyword = OtpMessageBodyKeywordSet.Any(k => message.Contains(k));
-                    ShowResultOnUI(messageContent);
+                    ShowResultOnUI(messageContent, true);
                     break;
 
                 case CommonStatusCodes.Timeout:
                     // Waiting for SMS timed out (5 minutes)
                     // Handle the error ...
-                    ShowResultOnUI("Timed Out Error! SMS retrieval failed!");
+                    ShowResultOnUI("Timed Out Error! SMS retrieval failed!", false);
                     break;
             }
         }
         
-        private void ShowResultOnUI(string smsContent)
+        private void ShowResultOnUI(string smsContent, bool isSuccess)
         {
-            MainActivity.UpdateResultUI(smsContent);
+            MainActivity.UpdateResultUI(smsContent, isSuccess);
         }
     }
 }

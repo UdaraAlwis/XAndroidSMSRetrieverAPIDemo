@@ -53,13 +53,13 @@ namespace XAndroidSMSRetrieverAPIDemo
             task.AddOnFailureListener(new FailureListener());
             
             Snackbar.Make((View)sender, "SMS Retriever started...", Snackbar.LengthShort).Show();
-            tvSMSContent.Text = $"Retrieved SMS will be shown here...";
+            tvSMSContent.Text = $"SMS retrieval results will be shown here...";
         }
 
         private static MainActivity _instance;
-        public static void UpdateResultUI(string smsContent)
+        public static void UpdateResultUI(string smsContent, bool isSuccess)
         {
-            _instance.tvSMSContent.Text = $"SMS Recived: \n\n{smsContent}";
+            _instance.tvSMSContent.Text = isSuccess ? $"SMS retrieved: \n\n{smsContent}" : $"Failed: \n\n{smsContent}";
         }
     }
 

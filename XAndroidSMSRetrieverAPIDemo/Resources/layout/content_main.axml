@@ -30,7 +30,7 @@
         android:layout_width="344dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-thin"
-        android:text="Retrieved SMS will be shown here..."
+        android:text="SMS retrieval results will be shown here..."
         android:textAlignment="center"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
