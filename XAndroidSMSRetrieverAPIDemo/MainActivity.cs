@@ -59,7 +59,7 @@ namespace XAndroidSMSRetrieverAPIDemo
         private static MainActivity _instance;
         public static void UpdateResultUI(string smsContent)
         {
-            _instance.tvSMSContent.Text = $"SMS Recived: {smsContent}";
+            _instance.tvSMSContent.Text = $"SMS Recived: \n\n{smsContent}";
         }
     }
 
