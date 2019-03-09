@@ -1,8 +1,10 @@
 # Xamarin Android SMS Retriever API Demo
 
 Android SMS Retriever API allows you to access the SMS Messages in the phone without having to request SMS read access permission, thus giving a complete peace of mind for the user. :wink:<br>
-Oh yes it's available in Xamarin Android as well! :relaxed:
-
+Oh yes it's available in Xamarin Android as well! :relaxed:<br>
+<br>
+Read more on my blog post: https://theconfuzedsourcecode.wordpress.com/2019/03/09/using-sms-retriever-api-in-xamarin-android/
+<br>
 <img src="https://github.com/UdaraAlwis/XAndroidSMSRetrieverAPIDemo/blob/master/screenshots/Android SMS Retriever API OTP Action Demo.gif"  height="400" /> <img src="https://github.com/UdaraAlwis/XAndroidSMSRetrieverAPIDemo/blob/master/screenshots/Android SMS Retriever API OTP Action Demo.png"  height="400" />
 
 In simplest terms we are going to have an object called SmsRetrieverClient that's going to wait for an incoming SMS message with the matching hash key to the app we are using. This active waiting is going to execute for 5 minutes and automatically dispose itself. <br>
