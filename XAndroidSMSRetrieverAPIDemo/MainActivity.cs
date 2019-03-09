@@ -37,6 +37,9 @@ namespace XAndroidSMSRetrieverAPIDemo
             // UI elements
 
             _instance = this;
+
+            //// One time execution just to retrieve the App Hash Key
+            // var appHashKey = AppHashKeyHelper.GetAppHashKey(this);
         }
         
         private void btnStartSMSRetreiver_OnClick(object sender, EventArgs eventArgs)
